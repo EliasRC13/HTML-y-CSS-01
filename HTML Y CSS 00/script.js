@@ -1,6 +1,8 @@
-const boton = document.querySelector("#boton-importante")
+const botones = document.querySelectorAll("#boton-importante")
 
-boton.addEventListener('click', function(){
+botones.forEach( function (boton) {
+boton.addEventListener ('click',  function(){
     boton.textContent = 'Aplicado!';
     boton.style.backgroundColor = '#22c55e' ;
+})
 })
