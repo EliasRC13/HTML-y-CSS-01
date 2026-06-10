@@ -1,3 +1,4 @@
+//OPCION 1
 //const botones = document.querySelectorAll(".button-apply-job")
 
 //botones.forEach( function (boton) {
@@ -7,6 +8,8 @@
   //  boton.disabled = true;
 //})
 //})
+
+//OPCION 2
 
 const container = document.querySelector('.jobs-listings');
 
