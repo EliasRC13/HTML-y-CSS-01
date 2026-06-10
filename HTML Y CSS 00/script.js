@@ -25,3 +25,9 @@ container.addEventListener('click', function (event) {
   }
 
 });
+
+const filterLocation = document.getElementById("filter-location")
+
+filterLocation.addEventListener('change', function(){
+  console.log("Ubicacion seleccionada", filterLocation.value)
+})
