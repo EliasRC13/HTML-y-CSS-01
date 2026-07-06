@@ -7,6 +7,7 @@
         <link rel="icon" type="image/png" href="logo.png">
         <meta name = "description" content="Encuentra las mejores fotos de Goku y Vegeta">
         <link rel="stylesheet" href="estilo.css">
+        <script defer src="script.js"></script>
     </head>
     <body>
         <header>
@@ -23,11 +24,13 @@
             </div>
         </header>
         <main>
+            
             <section>
                 <img  src="dragon-ball-z.jpg" alt="Todos los personajes de DB" width="200">
                 <h1>Encuentra las mejores fotos de Dragon Ball</h1>
                 <p>Unete a la comunidad con mas fans de Dragon Ball de todal la web.</p>
             </section>
+            
             <section>
                 <header>
                     <h2>¿Cual buscas?</h2>
@@ -35,6 +38,7 @@
 
                 </header>
                 <footer>
+                    
                 <article>
                     <div class="icon">
                     <img  aspect-ratio="638/317" src="fotos individuales.png" alt="Imagen que representa a las fotos individuales" >
@@ -57,6 +61,23 @@
                     <p>Shenglong con sus deseos han hecho codiciar a mas de uno el poder pedir lo que uno quiere</p>
                 </article>
                 </footer>
+            </section>
+            <section>
+                <form id="prueba" class="form-style">
+                    <label>
+                    Nombre
+                    <input type="text" id="input-nombre" />
+                    <button type="submit">Enviar</button>
+                    </label>
+
+                    <label for="filtro">De Donde Eres?</label>
+                    <select  id="filtro">
+                        <option value="arg">Argentina</option>
+                        <option value="br">Brasil</option>
+                        <option value="mx">Mexico</option>
+                        <option value="eeuu">Estados Unidos</option>
+                    </select>
+                </form>
             </section>
 
         </main>
