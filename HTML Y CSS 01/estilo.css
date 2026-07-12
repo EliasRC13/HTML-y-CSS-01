@@ -295,3 +295,18 @@ footer {
   margin-block: 0.5rem;
 }
 
+.aply-button {
+  background-color: #09f;
+  display: block;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-block: 0.5rem;
+  padding: 16px;
+  border-radius: 5px;
+  
+
+  &.is-aplied {
+    background-color: green;
+
+  }
+}

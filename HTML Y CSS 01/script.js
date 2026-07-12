@@ -4,15 +4,22 @@ pais?.addEventListener('change', function() {
     console.log ("Opcion seleccionada:", pais.value)
 })
 
-const prueba = document.getElementById('prueba')
+const prueba = document.querySelector('.form-style')
 
 //inputNombre.addEventListener('focus', function () {
 // console.log('Se tiene el foco')
 //})
-const inputNombre = document.getElementById('input-nombre')
 
-prueba.addEventListener('submit', function(event){
-    event.preventDefault()
-    console.log('Bienvenido', inputNombre.value)
-})
+
+prueba.addEventListener('click', function(event){
+    const element = event.target
+
+    element?.classList.contains('aply-button')
+        event.preventDefault()
+        element.classList.add('is-aplied')
+        element.disabled = true
+        element.textContent = "Aplicado!"
+
+    }
+    )
 
