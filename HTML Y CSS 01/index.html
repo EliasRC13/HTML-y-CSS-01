@@ -68,20 +68,21 @@
                     <label>
                     Opcion 1
                     
-                    <button class="aply-button">Aplicar</button>
+                    <button data-modalidad="Remoto" class="aply-button">Aplicar</button>
                     </label>
                     <label>
                     Opcion 2
                     
-                    <button class="aply-button">Aplicar</button>
+                    <button data-modalidad="Mixto" class="aply-button">Aplicar</button>
                     </label>
                     <label>
                     Opcion 3
                     
-                    <button class="aply-button">Aplicar</button>
+                    <button data-modalidad="Presencial" class="aply-button">Aplicar</button>
                     </label>
                     
-
+                </form>
+                <form >
                     <label for="filtro">De Donde Eres?</label>
                     <select  id="filtro">
                         <option value="arg">Argentina</option>
@@ -90,6 +91,14 @@
                         <option value="eeuu">Estados Unidos</option>
                     </select>
                 </form>
+                <div class="opciones">
+                <article class="opcion" data-modalidad="Presencial">Opcion 1</article>
+                <article class="opcion" data-modalidad="Remoto">Opcion 2</article>
+                <article class="opcion" data-modalidad="Mixto">Opcion 3</article>
+                <article class="opcion" data-modalidad="Remoto">Opcion 4</article>
+                <article class="opcion" data-modalidad="Presencial">Opcion 5</article>
+                <article class="opcion" data-modalidad="Presencial">Opcion 6</article>
+                </div>
             </section>
 
         </main>

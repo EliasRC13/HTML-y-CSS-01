@@ -5,6 +5,7 @@ pais?.addEventListener('change', function() {
 })
 
 const prueba = document.querySelector('.form-style')
+const opcion = document.querySelectorAll('.opcion')
 
 //inputNombre.addEventListener('focus', function () {
 // console.log('Se tiene el foco')
@@ -19,6 +20,17 @@ prueba.addEventListener('click', function(event){
         element.classList.add('is-aplied')
         element.disabled = true
         element.textContent = "Aplicado!"
+        console.log(element.dataset.modalidad)
+        
+        opcion.forEach(op => {
+            const modalidad = op.dataset.modalidad
+            if (element.dataset.modalidad === '' || element.dataset.modalidad === modalidad) {
+                op.style.display = 'flex'
+            } else {
+                op.style.display = 'none'
+            }
+        })
+
 
     }
     )
