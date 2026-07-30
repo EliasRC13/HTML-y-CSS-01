@@ -35,3 +35,17 @@ prueba.addEventListener('click', function(event){
     }
     )
 
+fetch('/lista.json')
+    .then(response => response.json())
+    .then(data => {
+        const contenedor = document.getElementById('contenedor')
+        contenedor.innerHTML = ''
+        data.forEach(item => {
+            const div = document.createElement('div')
+            div.innerHTML = `
+                <h3>${item.nombre}</h3>
+                <p>${item.edad}</p>
+            `
+            contenedor.appendChild(div)
+        })
+    })
